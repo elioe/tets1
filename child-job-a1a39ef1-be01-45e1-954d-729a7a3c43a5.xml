@@ -1,0 +1,24 @@
+<joblist>
+  <job>
+    <context>
+      <options preserveOrder='true'>
+        <option name='nombre' />
+      </options>
+    </context>
+    <defaultTab>summary</defaultTab>
+    <description></description>
+    <executionEnabled>true</executionEnabled>
+    <id>a1a39ef1-be01-45e1-954d-729a7a3c43a5</id>
+    <loglevel>INFO</loglevel>
+    <name>child-job</name>
+    <nodeFilterEditable>false</nodeFilterEditable>
+    <scheduleEnabled>true</scheduleEnabled>
+    <sequence keepgoing='false' strategy='node-first'>
+      <command>
+        <script><![CDATA[echo @option.nombre@]]></script>
+        <scriptargs />
+      </command>
+    </sequence>
+    <uuid>a1a39ef1-be01-45e1-954d-729a7a3c43a5</uuid>
+  </job>
+</joblist>

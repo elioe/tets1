@@ -1,0 +1,36 @@
+<joblist>
+  <job>
+    <defaultTab>summary</defaultTab>
+    <description><![CDATA[Create more than 10 concurrent
+executions and increase the default thread count]]></description>
+    <dispatch>
+      <excludePrecedence>true</excludePrecedence>
+      <keepgoing>false</keepgoing>
+      <rankOrder>ascending</rankOrder>
+      <successOnEmptyNodeFilter>false</successOnEmptyNodeFilter>
+      <threadcount>1</threadcount>
+    </dispatch>
+    <executionEnabled>true</executionEnabled>
+    <id>cc50c1e1-b35d-4e5b-b192-508828f80eb0</id>
+    <loglevel>INFO</loglevel>
+    <name>Job_Simultaneosly6</name>
+    <nodeFilterEditable>false</nodeFilterEditable>
+    <nodefilters>
+      <filter>name: linux1</filter>
+    </nodefilters>
+    <nodesSelectedByDefault>true</nodesSelectedByDefault>
+    <schedule>
+      <month month='*' />
+      <time hour='11' minute='40' seconds='0' />
+      <weekday day='FRI' />
+      <year year='*' />
+    </schedule>
+    <scheduleEnabled>true</scheduleEnabled>
+    <sequence keepgoing='false' strategy='node-first'>
+      <command>
+        <exec>echo "eat my pants"</exec>
+      </command>
+    </sequence>
+    <uuid>cc50c1e1-b35d-4e5b-b192-508828f80eb0</uuid>
+  </job>
+</joblist>

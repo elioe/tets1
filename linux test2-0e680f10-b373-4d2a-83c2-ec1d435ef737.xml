@@ -1,0 +1,39 @@
+<joblist>
+  <job>
+    <defaultTab>summary</defaultTab>
+    <description></description>
+    <dispatch>
+      <excludePrecedence>true</excludePrecedence>
+      <keepgoing>false</keepgoing>
+      <rankOrder>ascending</rankOrder>
+      <successOnEmptyNodeFilter>false</successOnEmptyNodeFilter>
+      <threadcount>1</threadcount>
+    </dispatch>
+    <executionEnabled>true</executionEnabled>
+    <id>0e680f10-b373-4d2a-83c2-ec1d435ef737</id>
+    <loglevel>INFO</loglevel>
+    <name>linux test2</name>
+    <nodeFilterEditable>false</nodeFilterEditable>
+    <nodefilters>
+      <filter>name: linux2</filter>
+    </nodefilters>
+    <nodesSelectedByDefault>true</nodesSelectedByDefault>
+    <scheduleEnabled>true</scheduleEnabled>
+    <sequence keepgoing='false' strategy='node-first'>
+      <command>
+        <exec>ls -lrt</exec>
+      </command>
+      <command>
+        <description>ping by nixy</description>
+        <node-step-plugin type='nixy-waitfor-ping'>
+          <configuration>
+            <entry key='host' value='192.168.1.106' />
+            <entry key='interval' value='5' />
+            <entry key='maxtry' value='3' />
+          </configuration>
+        </node-step-plugin>
+      </command>
+    </sequence>
+    <uuid>0e680f10-b373-4d2a-83c2-ec1d435ef737</uuid>
+  </job>
+</joblist>

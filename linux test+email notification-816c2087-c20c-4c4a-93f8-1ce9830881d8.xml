@@ -1,0 +1,38 @@
+<joblist>
+  <job>
+    <defaultTab>summary</defaultTab>
+    <description></description>
+    <dispatch>
+      <excludePrecedence>true</excludePrecedence>
+      <keepgoing>false</keepgoing>
+      <rankOrder>ascending</rankOrder>
+      <successOnEmptyNodeFilter>false</successOnEmptyNodeFilter>
+      <threadcount>1</threadcount>
+    </dispatch>
+    <executionEnabled>true</executionEnabled>
+    <id>816c2087-c20c-4c4a-93f8-1ce9830881d8</id>
+    <loglevel>INFO</loglevel>
+    <name>linux test+email notification</name>
+    <nodeFilterEditable>false</nodeFilterEditable>
+    <nodefilters>
+      <filter>name: linux1</filter>
+    </nodefilters>
+    <nodesSelectedByDefault>true</nodesSelectedByDefault>
+    <notification>
+      <onfailure>
+        <email attachLog='true' attachLogInline='true' recipients='fab63553f7-20b385@inbox.mailtrap.io' subject='test notification' />
+      </onfailure>
+      <onsuccess>
+        <email attachLog='true' attachLogInline='true' recipients='fab63553f7-20b385@inbox.mailtrap.io' subject='test notification' />
+      </onsuccess>
+    </notification>
+    <notifyAvgDurationThreshold />
+    <scheduleEnabled>true</scheduleEnabled>
+    <sequence keepgoing='false' strategy='parallel'>
+      <command>
+        <exec>ls -lrt</exec>
+      </command>
+    </sequence>
+    <uuid>816c2087-c20c-4c4a-93f8-1ce9830881d8</uuid>
+  </job>
+</joblist>

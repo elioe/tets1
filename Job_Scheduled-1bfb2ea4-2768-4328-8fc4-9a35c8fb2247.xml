@@ -1,0 +1,35 @@
+<joblist>
+  <job>
+    <defaultTab>summary</defaultTab>
+    <description>Enable a Schedule Job to runs each 5 minutes</description>
+    <dispatch>
+      <excludePrecedence>true</excludePrecedence>
+      <keepgoing>false</keepgoing>
+      <rankOrder>ascending</rankOrder>
+      <successOnEmptyNodeFilter>false</successOnEmptyNodeFilter>
+      <threadcount>1</threadcount>
+    </dispatch>
+    <executionEnabled>true</executionEnabled>
+    <id>1bfb2ea4-2768-4328-8fc4-9a35c8fb2247</id>
+    <loglevel>INFO</loglevel>
+    <name>Job_Scheduled</name>
+    <nodeFilterEditable>false</nodeFilterEditable>
+    <nodefilters>
+      <filter>name: linux1</filter>
+    </nodefilters>
+    <nodesSelectedByDefault>true</nodesSelectedByDefault>
+    <schedule>
+      <dayofmonth />
+      <month day='1/1' month='*' />
+      <time hour='*' minute='0/5' seconds='0' />
+      <year year='*' />
+    </schedule>
+    <scheduleEnabled>true</scheduleEnabled>
+    <sequence keepgoing='false' strategy='node-first'>
+      <command>
+        <exec>echo " Hello"</exec>
+      </command>
+    </sequence>
+    <uuid>1bfb2ea4-2768-4328-8fc4-9a35c8fb2247</uuid>
+  </job>
+</joblist>
