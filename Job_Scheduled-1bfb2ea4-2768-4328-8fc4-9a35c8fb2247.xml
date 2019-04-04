@@ -27,7 +27,7 @@
     <scheduleEnabled>true</scheduleEnabled>
     <sequence keepgoing='false' strategy='node-first'>
       <command>
-        <exec>echo " Hello"</exec>
+        <exec>echo " Hello + Test Importing"</exec>
       </command>
     </sequence>
     <uuid>1bfb2ea4-2768-4328-8fc4-9a35c8fb2247</uuid>
